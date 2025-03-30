@@ -6,6 +6,7 @@ APP_CONTAINER = django_app
 # Start the application
 up:
 	$(COMPOSE) up --build -d
+	$(COMPOSE) logs -f
 
 # Stop all containers
 down:
